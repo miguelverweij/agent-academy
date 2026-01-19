@@ -54,7 +54,7 @@ At the core of most conversational AI systems are **Large Language Models**, neu
 When LLMs rely solely on static training data, they might hallucinate or become outdated. RAG addresses this by letting the model “look up” fresh information before composing an answer. At a high level, RAG works like this:
 
 1. **User Query:** A user asks a question (e.g., “What’s the latest on Contoso’s quarterly earnings?”).  
-1. **Retriever Step:** The system queries a knowledge source (documents, public websites, internal databases, SharePoint libraries, etc.) to find relevant information.  
+1. **Retrieval Step:** The system queries a knowledge source (documents, public websites, internal databases, SharePoint libraries, etc.) to find relevant information.  
 1. **Augmentation:** Retrieved data gets appended to or prepended before sending to the LLM.
 1. **Generation:** The LLM ingests both the user’s question and the retrieved context, then generates a response that’s grounded in up-to-date data.  
 
